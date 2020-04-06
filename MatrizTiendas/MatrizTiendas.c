@@ -35,11 +35,11 @@ y las ventas por semana por tienda en una tabla.
   	{
    case 'F':case'f':
    for(i=0;i<5;i++)
-   {    printf("Ingresa el nombre de la tienda %s:  \n",tienda[i+1]);
+   {    printf("Ingresa el nombre de la tienda %i:  \n",i+1);
         fflush(stdin);gets(tienda[i]);
      for(j=0;j<7;j++)
       {
-        printf("Ingresa las ventas del dia %-10s $",semana[j]);
+        printf("Ingresa las ventas de la tienda %s en el dia %-10s $",tienda[i],semana[j]);
         scanf("%f%*c",&dinero[i][j]);
         acumulador[i]=acumulador[i]+dinero[i][j];
       }
@@ -50,6 +50,7 @@ y las ventas por semana por tienda en una tabla.
    {
      printf("\t\t\t%s",tienda[i]);
    }
+   printf("\n-----------------------------------------------------------------------------------------------------------------------------------------\n");
      printf("\n");
    for(i=0;i<7;i++)
    {  printf("%s",semana[i]);
@@ -62,8 +63,8 @@ y las ventas por semana por tienda en una tabla.
      }
      printf("\n");
    }
-   printf("---------------------------------------------------------------------------------------------------------\n");
-   printf("TOTAL");
+   printf("-----------------------------------------------------------------------------------------------------------------------------------------\n");
+   printf("TOTAL:");
    for(i=0;i<5;i++)
    {printf("\t\t\t$%.2f",acumulador[i]);}
    break;
