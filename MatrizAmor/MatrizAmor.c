@@ -40,6 +40,7 @@ D.P Imprimir la palabra "AMOR" en diagonal
        {matrizamor[i][j]=' ';}
      }
    }
+   
    for(i=0;i<4;i++)
    {
       printf("\t");
