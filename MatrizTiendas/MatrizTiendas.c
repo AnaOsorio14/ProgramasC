@@ -17,7 +17,6 @@ y las ventas por semana por tienda en una tabla.
    {
       system("clear");
       printf("                 VENTAS DE LA SEMANA\n");
-      printf("Descubre la palabra en la matriz\n");
   		printf("Menu para realizar la accion\n");
   		printf("_______________________________\n");
   		printf("F o f (for)\n");
@@ -45,6 +44,7 @@ y las ventas por semana por tienda en una tabla.
       printf("\n");
   }
   system("clear");
+    printf("                                TABLA DE VENTAS\n")
    for(i=0;i<5;i++)
    {
      printf("\t\t\t%s",tienda[i]);
