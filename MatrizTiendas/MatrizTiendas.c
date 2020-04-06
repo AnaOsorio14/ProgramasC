@@ -12,10 +12,9 @@ y las ventas por semana por tienda en una tabla.
  int main()
 
  { int i,j;
-   float a=0;
    char rep,esc;
    do
-   {  a=0;
+   {
       system("clear");
       printf("                 VENTAS DE LA SEMANA\n");
       printf("Descubre la palabra en la matriz\n");
@@ -30,7 +29,7 @@ y las ventas por semana por tienda en una tabla.
       char semana[][20] = {"Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo"};
       char tienda[5][50];
       float dinero[5][7];
-      float acumulador[5];
+      float acumulador[5]= {0.0,0.0,0.0,0.0,0.0};
    switch(esc)
   	{
    case 'F':case'f':
