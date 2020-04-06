@@ -67,16 +67,6 @@ y las ventas por semana por tienda en una tabla.
    for(i=0;i<5;i++)
    {printf("\t\t\t$%.2f",acumulador[i]);}
    break;
-
-
-
-
-
-
-
-
-
-
    default:
    printf("No existe esa opcion\n");
  }
